@@ -17,7 +17,7 @@ h1 {
     background-position: right;
     background-repeat: no-repeat;
     padding-left: 1rem;
-    background-origin: context-box;
+    background-clip: content-box;
     margin-bottom:0;
 }
 nav {
