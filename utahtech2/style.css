@@ -9,7 +9,7 @@ header {
     color: #FFFFFF;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-body h1 {
+h1 {
     line-height: 140%;
     padding: .5rem;
 }
