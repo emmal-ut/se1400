@@ -2,6 +2,7 @@
 body {
     background-color:#FFFFFF;
     background-image:linear-gradient(#EEEEEE, #FFFFFF);
+    background-attachment: fixed;
     color: #666666;
     font-family: Arial, Arial, Helvetica, sans-serif;
 }
