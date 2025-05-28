@@ -94,6 +94,7 @@ h3 {
 main img {
     float: right;
     padding-left: 2rem;
+    clear: none;
 }
 main {
     padding-left: 2rem;
