@@ -13,5 +13,26 @@ header {
 }
 nav {
     grid-column: (1 / 8);
+    grid-row: 2;
     background-color: rgba(255, 136, 0, 0.3);
+}
+#homehero {
+    grid-column: (1 / 8);
+    grid-row: (3 / 5);
+    background-color: rgba(74, 255, 2, 0.3);
+}
+#section1 {
+    grid-column: (2 / 7);
+    grid-row: 4;
+    background-color: rgba(2, 213, 255, 0.3);
+}
+#section2 {
+    grid-column: (2 / 7);
+    grid-row: 5;
+    background-color: rgba(124, 2, 255, 0.3);
+}
+footer {
+    grid-column: (1 / 8);
+    grid-row: 6;
+    background-color: rgba(255, 2, 255, 0.3);
 }
