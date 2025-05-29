@@ -11,7 +11,7 @@
 header {
     height: 125px;
     display: grid;
-    grid-column: 1 / 8;
+    grid-column: 1 / -1;
     background-color: rgba(5, 21, 255, 0.3);
 }
 #homehero {
