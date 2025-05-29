@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr); 
+    grid-template-rows: auto;
+}
+header {
+    grid-column: (1 / 2);
+    background-color: rgba(238, 0, 0, 0.3);
+}
+nav {
+    grid-column: (1 / -1);
+    background-color: rgba(255, 136, 0, 0.3);
+}
