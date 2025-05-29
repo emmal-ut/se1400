@@ -8,10 +8,10 @@
 }
 header {
     height: 125px;
-    grid-column: (1 / -1);
+    grid-column: (1 / 8);
     background-color: rgba(238, 0, 0, 0.3);
 }
 nav {
-    grid-column: (1 / -1);
+    grid-column: (1 / 8);
     background-color: rgba(255, 136, 0, 0.3);
 }
