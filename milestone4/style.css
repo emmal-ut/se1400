@@ -88,6 +88,15 @@ nav a:hover {
     border-bottom: #AEA922 dotted 10px;
     }
 
+    h2 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 130px;
+    color: #AEA922;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+    margin: 60px;
+    }
+
 /* SECTION 1 */
 
 #section1 {
@@ -115,6 +124,14 @@ nav a:hover {
     color: #AEA922;
     text-align: left;
     margin: 40px 20px 20px 0px;
+    }
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #0F2631;
+    text-align: left;
+    margin: 40px;
     }
 
 /* SECTION 2 */
@@ -184,7 +201,7 @@ footer {
 #footerbox {
     grid-column: 3 / 7;
     }
-    
+
 footer h1 {
     font-family: "AstonScriptBold-Bold";
     font-size: 30px;
@@ -230,26 +247,8 @@ main {
     grid-column: 1 / -1;
     }
 
-/* TYPE */
+/* FONT */
 
 @font-face {
     font-family:"AstonScriptBold-Bold";src:url("Aston_Script.eot?") format("eot"),url("Aston_Script.woff") format("woff"),url("Aston_Script.ttf") format("truetype"),url("Aston_Script.svg#AstonScriptBold-Bold") format("svg");font-weight:normal;font-style:normal;
-    }
-
-
-h2 {
-    font-family: "AstonScriptBold-Bold";
-    font-size: 130px;
-    color: #AEA922;
-    text-align: center;
-    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
-    margin: 60px;
-    }
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #0F2631;
-    text-align: left;
-    margin: 40px;
     }
