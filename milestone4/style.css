@@ -11,16 +11,17 @@
 header {
     height: 125px;
     display: grid;
-    grid-column: 2 / 6;
-    background-color: rgba(5, 21, 255, 0.3);
+    grid-column: 1 / -1;
+    background-color: #0F2631;
 }
 #headercontent {
     display: grid;
-    grid-column: 2 /7;
+    grid-column: 2 / 7;
 }
 .navbar {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-column: 3 / 6;
+    
 }
 .navbar ul{
     list-style-type: none;
@@ -29,16 +30,18 @@ header {
     overflow: hidden;
     display: flex;
     width: 100%;
-}
-.navbar li {
-    float: left;
+    align-items: center;
+    justify-content: flex-end;
 }
 .navbar a{
     text-decoration: none;
-    color: #000;
     display: block;
-    padding: 15px;
+    padding: 10px;
     height: 100%;
+    text-align: right;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:#bebebe;
 }
 .navbar a:hover {
     color: #AEA922;
@@ -47,18 +50,28 @@ header {
     height: 393px;
     display: grid;
     grid-column: 1 / 8;
-    background-color: rgba(255, 2, 2, 0.3);
+    background-image: url(images/homehero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 main {
     display: grid;
-    grid-column: 1 / -1;
+    grid-column: 2 / 7;
     background-color: rgba(255, 255, 255, 0.3);
 }
 #section1 {
     height: 490px;
     display: grid;
     grid-column: 2 / 7;
-    background-color: rgba(255, 158, 2, 0.3);
+    background-image: url(images/sectionbkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#section1 img {
+    float: left;
+    margin: 40px;
 }
 #section2 {
     height: 424px;
@@ -78,7 +91,30 @@ footer {
 }
 h1 {
     font-family: "AstonScriptBold-Bold";
-    font-size: 24px;
+    font-size: 30px;
     color: #bebebe;
+    text-align: right;
+    align-items: flex-end;
+}
+h2 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 130px;
+    color: #AEA922;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+    margin: 60px;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #AEA922;
     text-align: left;
+    margin: 50px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #0F2631;
+    text-align: left;
+    margin: 40px;
 }
