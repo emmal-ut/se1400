@@ -54,6 +54,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: static;
 }
 main {
     display: grid;
@@ -68,6 +69,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: static;
 }
 #section1 img {
     float: left;
