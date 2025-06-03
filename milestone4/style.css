@@ -18,30 +18,28 @@
 
 header {
     height: auto;
-    grid-column: 1 / -1;
+    grid-column: 2 / 3;
     background-color: #0F2631;
     }
 
-#headerbox {
-    grid-column: 3 / 7;
-}
 
 header h1 {
     font-family: "AstonScriptBold-Bold";
     font-size: 30px;
     color: #bebebe;
     align-items: center;
-    margin-left: 40px;
+    float: left;
     }
 
 /* NAVIGATION */
 
 nav {
     display: flex;
+    padding-top: 25px;
     align-items: center;
-    justify-content: flex-end;
     height: 100%;
-    margin-right: 40px;
+    text-align: right;
+    grid-column: 5 / 8;
 }
 
 nav ul {
@@ -62,7 +60,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    padding: 5px 8px;
+    padding: 5px 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #bebebe;
@@ -185,7 +183,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #AEA922;
-    text-align: left;
+    text-align: right;
     margin: 17px 40px 40px 0px;
     }
 
@@ -193,32 +191,27 @@ p {
 
 footer {
     height: auto;
-    grid-column: 1 / -1;
+    grid-column: 3 / 7;
     background-color: #0F2631;
     padding: 20px;
     }
-
-#footerbox {
-    grid-column: 3 / 7;
-    }
-
 footer h1 {
+    grid-column: 2 / 3;
     font-family: "AstonScriptBold-Bold";
     font-size: 30px;
     color: #bebebe;
-    align-items: center;
-    margin-left: 40px;
+    text-align: left;
     }
 
 footer ul {
     list-style-type: none;
     margin:0;
+    grid-column: 5 / 8;
     }
 
 footer li {
     align-items: center;
     text-align: end;
-    margin: 0px 40px 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #AEA922;
@@ -229,14 +222,14 @@ footer a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #AEA922;
-    text-align: end;
+    text-align: right;
 }
 
 footer h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #AEA922;
-    text-align: end;
+    text-align: right;
     margin-right: 40px;
     margin-bottom: 0;
     }
