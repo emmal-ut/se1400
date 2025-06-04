@@ -264,6 +264,8 @@ main {
         width: 768px;
     }
 
+    /* HEADER */
+
     header {
     height: auto;
     grid-column: 1 / 9;
@@ -278,6 +280,19 @@ main {
     text-align: center;
     float: none;
     }
+
+    /* HOMEHERO */
+
+    h2 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 110px;
+    color: #AEA922;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+    margin: 60px;
+    }
+
+    /* NAVIGATION */
 
     nav {
     position: static;
@@ -304,6 +319,34 @@ main {
     nav a {
     padding: 0;
     }
+    
+    /* SECTION 1 */
+
+    #section1 {
+    height: auto;
+    display: grid;
+    background-image: url(images/sectionbkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: static;
+    border-bottom: #AEA922 dotted 10px;
+    }
+
+    #section1 img {
+    float: none;
+    max-width: 400px;
+    height: auto;
+    margin: 40px auto;
+    }
+
+    #section1 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #AEA922;
+    margin: 0 auto;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -311,4 +354,15 @@ main {
     .center-column {
         width: 100%;
     }
+
+    h2 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 90px;
+    color: #AEA922;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+    margin: 60px;
+    }
+
+
 }
