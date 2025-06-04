@@ -163,7 +163,7 @@ input, textarea {
     padding: 10px;
     color: #666666;
     background-color: #fafafa;
-    border: off;
+    border: none;
 }
 input, textarea :focus {
     outline: none;
