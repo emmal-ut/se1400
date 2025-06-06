@@ -7,6 +7,15 @@
     <meta name="robots" content="noindex, nofollow">
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function validateForm() {
+         if (document.forms[0].myEmail.value == "" ) {
+            alert("Please enter an e-mail address.");
+            return false;
+         } // end if
+         return true;
+        } // end function validateForm
+    </script>
 </head>
 
 <body>
@@ -30,18 +39,18 @@
             <h2>Join Alumni Mailing List</h2>
             <h3>Request Alumni Newsletter</h3>
             <p>Required information is marked with an asterisk (*).</p>
-            <form action="https://kearl.net/se1400/mail.php" method="post" id="form" autocomplete="off" name="formcontrol">
-                <label for="FirstName">*First Name:</label>
-                <input type="text" id="FirstName" name="myFName" required>
-                <label for="LastName">*Last Name:</label>
-                <input type="text" id="LastName" name="myLName" required>
-                <label for="E-mail">*E-mail:</label>
-                <input type="email" id="E-mail" name="myEmail" required>
-                <label for="Phone">*Phone:</label>
-                <input type="tel" id="Phone" name="myPhone" required>
+            <form method="post" onsubmit="return validateForm();" action="https://kearl.net/se1400/mail.php">
+                <label for="FirstName">First Name:</label>
+                <input type="text" id="FirstName" name="myFName">
+                <label for="LastName">Last Name:</label>
+                <input type="text" id="LastName" name="myLName">
+                <label for="E-mail">E-mail:</label>
+                <input type="text" name="myEmail" id="myEmail">
+                <label for="Phone">Phone:</label>
+                <input type="tel" id="Phone" name="myPhone">
                 <label for="GradDate">Graduation Date:</label>
                 <input type="date" id="GradDate" name="myGradDate">
-                <label for="Comments">*Comments:</label>
+                <label for="Comments">Comments:</label>
                 <textarea name="myComments" id="Comments" cols="20" rows="2"></textarea>
                 <input type="Submit" value="Submit" name="mySubmit">
             </form>
