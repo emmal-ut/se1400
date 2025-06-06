@@ -165,6 +165,14 @@ main {
     grid-row: 3/ 4;
     grid-column: 1/ -1;
 }
+#shoppingcart img {
+    width: 100%;
+    height: auto;
+}
+#shoppingcart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 form {
     display: grid;
     grid-template-rows: auto;
@@ -284,6 +292,14 @@ table:nth-of-type(even){
     grid-row: 2/ 3;
     grid-column: 5/ 8;
     }
+    #shophero id {
+    grid-row: 2 / 3;
+    grid-column: 5 / 8;
+    height: auto;
+    }
+    #shoppingcart {
+    grid-template-columns: repeat(2, 1fr);
+    }
     main img {
     float: none;
     padding-left: 0px;
@@ -362,5 +378,8 @@ table:nth-of-type(even){
     grid-row: 2/ 3;
     grid-column: 5/ 8;
     display: none;
+    }
+    #shoppingcart {
+    grid-template-columns: 1fr;
     }
 }
