@@ -296,6 +296,8 @@ main {
 
     nav {
     position: static;
+    width: 100%;
+    height: auto;
     }
 
     nav ul {
