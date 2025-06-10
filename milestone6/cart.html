@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>LuckyLee</title>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id= "wrapper">
+
+            <header> 
+                    <h1>LuckyLee</h1>
+            </header>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="shop.html">SHOP</a></li>
+                            <li><a href="custom.html">CUSTOM</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                        </ul>
+                    </nav>
+        <main>
+            <div class ="mycart">
+                <h3>Your Cart</h3>
+                <ul id="cart-list"></ul>
+                <p>Total: $<span id="total">0.00</span></p>
+                <script>
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartList = document.getElementById('cart-list');
+                let total = 0;
+                cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                cartList.appendChild(li);
+                total += item.price;
+                });
+                document.getElementById('total').textContent = total.toFixed(2);
+
+                </script>
+                <button onclick="clearCart()">Clear Cart</button>
+
+                <script>
+                function clearCart() {
+                localStorage.removeItem('cart');
+                alert("Cart cleared!");
+                location.reload(); // reload page to show empty cart
+                }
+                </script>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

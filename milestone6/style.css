@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+    }
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr); 
+    grid-template-rows: auto;
+    background-color: #0F2631;
+    }
+
+
+/* HEADER */
+
+header {
+    height: auto;
+    display: flex;
+    grid-column: 2 / 3;
+    background-color: #0F2631;
+    justify-content: center;
+    }
+
+
+header h1 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 30px;
+    color: #bebebe;
+    float: left;
+    margin-left: 40px;
+    }
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    grid-column: 4 / 8;
+    position: sticky;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    }
+
+nav li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #bebebe;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #AEA922;
+}
+
+/* HOMEHERO */
+
+#homehero {
+    height: auto;
+    display: grid;
+    grid-column: 1 / -1;
+    background-image: url(images/homehero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: static;
+    border-bottom: #AEA922 dotted 10px;
+    }
+
+    h2 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 130px;
+    color: #AEA922;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+    margin: 60px;
+    }
+
+/* SECTION 1 */
+
+#section1 {
+    height: auto;
+    display: flex;
+    background-image: url(images/sectionbkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: static;
+    border-bottom: #AEA922 dotted 10px;
+    }
+
+#section1 img {
+    float: left;
+    margin: 40px;
+    max-width: 400px;
+    height: auto;
+    }
+
+#section1 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #AEA922;
+    margin: 40px 20px 20px 0px;
+    }
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #0F2631;
+    margin: 40px;
+    }
+
+/* SECTION 2 */
+
+#section2 {
+    height: auto;
+    grid-column: 3 / 7;
+    background-color: #122f3c;
+    justify-content: center;
+    }
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    }
+
+#gallery div {
+    border: 4px solid #AEA922;
+    margin: 40px 20px 20px 5px;
+    }
+
+#gallery div img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    }
+
+#section2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 80px;
+    background-color: #bebebe;
+    border-top: 12px double #122f3c;
+    border-bottom: 12px double #122f3c;
+    }
+
+#section2 li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}
+
+#section2 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #AEA922;
+    text-align: right;
+    margin: 17px 40px 40px 0px;
+    }
+
+/* FOOTER */
+
+footer {
+    height: auto;
+    grid-column: 2 / 8;
+    display: flex;
+    background-color: #0F2631;
+    padding: 20px;
+    }
+
+footer h1 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 30px;
+    color: #bebebe;
+    float: left;
+    }
+
+footer table {
+    margin: 0 auto;
+    width: 100%;
+    float: right;
+    }
+
+footer table, footer th {
+    border: none;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #AEA922;
+}
+footer th {
+    text-align: right;
+    font-weight: normal;
+}
+footer a {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #AEA922;
+    text-align: right;
+}
+footer a:hover {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #bebebe;
+    text-align: right;
+}
+footer caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #AEA922;
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 0;
+    }
+
+/* MAIN */
+
+main {
+    grid-column: 1 / -1;
+    background-color: #bebebe;
+    }
+
+/* SHOP */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #0F2631;
+}
+
+.products {
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    grid-column: 4 / 8;
+    position: sticky;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    }
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+
+button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  height: 70px;
+  background-color: #AEA922;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+    background-color: #0F2631
+}
+
+/* CART */
+    .mycart h3 {
+    font-family: "AstonScriptBold-Bold";
+    color: #AEA922;
+    background-color: #0F2631;
+    font-size: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    }
+    #cart-list li{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+    .mycart p{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    font-weight: bold;
+}
+.mycart button {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+
+/* FONT */
+
+@font-face {
+    font-family:"AstonScriptBold-Bold";src:url("Aston_Script.eot?") format("eot"),url("Aston_Script.woff") format("woff"),url("Aston_Script.ttf") format("truetype"),url("Aston_Script.svg#AstonScriptBold-Bold") format("svg");font-weight:normal;font-style:normal;
+    }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+
+    .center-column {
+        width: 768px;
+    }
+
+    /* HEADER */
+
+    header {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    grid-column: 1 / 8;
+    }
+
+    header h1 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 30px;
+    color: #bebebe;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    float: none;
+    margin-left: 0;
+    }
+
+    /* HOMEHERO */
+
+    h2 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 110px;
+    color: #AEA922;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+    margin-left: 60px;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    grid-column: 1 / 8;
+    }
+
+    nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    list-style-type: none;
+    justify-content: center;
+    }
+
+    nav li {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    nav a {
+    padding: 0;
+    }
+    
+    /* SECTION 1 */
+
+    #section1 {
+    height: auto;
+    display: grid;
+    background-image: url(images/sectionbkg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: static;
+    border-bottom: #AEA922 dotted 10px;
+    }
+
+    #section1 img {
+    float: none;
+    max-width: 400px;
+    height: auto;
+    margin: 40px auto;
+    }
+
+    #section1 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #AEA922;
+    margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .center-column {
+        width: 100%;
+    }
+
+    h2 {
+    font-family: "AstonScriptBold-Bold";
+    font-size: 90px;
+    color: #AEA922;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+    margin: 60px;
+    }
+
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>LuckyLee</title>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id= "wrapper">
+
+            <header> 
+                    <h1>LuckyLee</h1>
+            </header>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="shop.html">SHOP</a></li>
+                            <li><a href="custom.html">CUSTOM</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="cart.html"><img src="images/carticon.png" width="20px" height="auto"></a></li>
+                        </ul>
+                    </nav>
+        <main>
+                <div class="product">
+                <h3>Print 1</h3>
+                <p>$12.00</p>
+                <button onclick="addToCart('Print 1', 12)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                <h3>Print 2</h3>
+                <p>$12.00</p>
+                <button onclick="addToCart('Print 2', 12)">Add to Cart</button>
+                </div>
+
+                <script>
+                function addToCart(name, price) {
+                    const item = { name, price };
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cart.push(item);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    alert("Added to cart!");
+                }
+                </script>
+        </main>
+    </div>
+</body>
+</html>
