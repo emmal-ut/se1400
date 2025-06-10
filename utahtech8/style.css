@@ -79,6 +79,7 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 video {
+    display: block;
     float: right;
     margin-left: 2em;
 }
@@ -115,7 +116,6 @@ main img {
 main {
     padding-left: 2rem;
     padding-right: 2rem;
-    display: grid;
     grid-row: 4/ 5;
     grid-column: 2/ -2;
     background-color: #ffffff;
