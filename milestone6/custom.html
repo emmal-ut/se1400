@@ -26,6 +26,8 @@
                         </ul>
                     </nav>
         <main>
+            <h4>Custom Designs</h4>
+            <p>Have a special project in mind? Whether you’re dreaming up custom invitations, personalized art prints, or something totally unique, we’re here to help bring your vision to life. Use the form below to tell us a bit about your idea, and we’ll be in touch to discuss details, pricing, and next steps. We love collaborating on creative projects!</p>
             <form action="submit.php" method="post">
             <label for="name">Name:</label><br>
             <input type="text" name="name" id="name" required><br><br>
@@ -33,9 +35,20 @@
             <label for="email">Email:</label><br>
             <input type="email" name="email" id="email" required><br><br>
 
-            <label for="message">Message:</label><br>
-            <textarea name="message" id="message" required></textarea><br><br>
+            <label for="project-type">Project Type:</label><br>
+            <select id="project-type" name="project-type" required>
+                <option value="">-- Please choose an option--</option>
+                <option value="Event Invitations">Event Inviations</option>
+                <option value="Business Cards">Business Cards</option>
+                <option value="Art Prints">Art Prints</option>
+                <option value="Specialty Art Piece">Specialty Art Piece</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            <label for="details">Tell us about your idea:</label><br>
+            <textarea id="details" name="details" rows="6" required></textarea><br><br>
 
+            <label for="deadline">Preferred Deadline:</label><br>
+            <input type="date" id="deadline" name="deadline"><br><br>
             <input type="submit" value="Send">
             </form>
         </main>
