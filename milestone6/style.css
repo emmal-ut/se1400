@@ -336,6 +336,7 @@ main ul {
     height: auto;
     border: #AEA922 solid 5px;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 5px;
 }
 details summary{
