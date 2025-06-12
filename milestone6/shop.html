@@ -27,30 +27,121 @@
                     </nav>
         <main>
             <h4>Shop Products</h4>
+            <div id="shop-main">
                 <div class="product">
-                <img src="products/frog-magnet.png" width="100px" height="auto"><br>
+                <img src="products/frog-magnet.png"><br>
                 <h3>"Live and Let Die" Frog Guitarist Magnet</h3>
-                <p>$12.00</p>
-                <button onclick="addToCart('Live and Let Die Frog Guitarist Magnet', 12, 'products/liveanddie.png')">Add to Cart</button>
+                <p>$10.00</p>
+                <button onclick="addToCart('Live and Let Die Magnet', 10 )">Add to Cart</button>
+                    <details>
+                    <summary>Details</summary>
+                    <p>"Live and Let Die" Frog Magnet
+                        Rock out with this rebellious amphibian! This edgy frog magnet features a guitar-wielding toad with attitude, set against a vibrant purple background with bold orange lettering that declares "LIVE and let DIE."
+                        Perfect for adding some punk rock personality to your fridge, locker, or any magnetic surface. High-quality construction with strong magnetic backing ensures it'll stick around for the long haul.
+                        For music lovers, frog enthusiasts, and anyone who appreciates a little irreverent humor in their home decor!</p>
+                    <li>Compact 3x4 rectangular magnet.</li>
+                    </details>
                 </div>
 
                 <div class="product">
-                    <img src="products/liveanddie.png" width="100px" height="auto"><br>
-                <h3>Print 2</h3>
-                <p>$12.00</p>
-                <button onclick="addToCart('Print 2', 12, 'products/liveanddie.png')">Add to Cart</button>
+                    <img src="products/olive-frame.png"><br>
+                <h3>Olive Pattern Art Print</h3>
+                <p>$15.00</p>
+                <button onclick="addToCart('Olive Pattern Art Print', 15)">Add to Cart</button>
+                    <details>
+                    <summary>Details</summary>
+                    <p>Add Mediterranean charm to your space with this stylish olive-inspired art print. The playful pattern features hand-illustrated green olives with vibrant red pimientos scattered across a clean cream background, creating a fresh, modern take on culinary art.</p>
+                        <li>Available in multiple sizes to fit any space</li>
+                    </details>
+                </div>
+
+                <div class="product">
+                    <img src="products/purse-stickers.png"><br>
+                <h3>"What's In My Purse?" Sticker Pack</h3>
+                <p>$8.00</p>
+                <button onclick="addToCart('In My Purse Sticker Pack', 8)">Add to Cart</button>
+                    <details>
+                    <summary>Details</summary>
+                    <p>Celebrate the beautiful chaos of everyday essentials with this relatable sticker collection! Features all those random items that somehow always end up at the bottom of your bag – lip balm, loose change, keys, and more.
+                        Perfect for decorating laptops, phone cases, water bottles, or journals. High-quality vinyl stickers that are waterproof and scratch-resistant.
+                        A hilariously honest tribute to the universal bag-carrying experience that every purse owner will instantly recognize!</p>
+                        <li>5" x 5" Vinyl Sticker Pad</li>
+                    </details>
+                </div>
+
+                <div class="product">
+                    <img src="products/lily-tee.png"><br>
+                <h3>Lily Stem Tee</h3>
+                <p>$20.00</p>
+                <button onclick="addToCart('Lily Stem Tee', 20)">Add to Cart</button>
+                    <details>
+                    <summary>Details</summary>
+                    <p>Elevate your casual wardrobe with this elegant botanical t-shirt featuring a delicate hand-drawn floral illustration. The intricate line art design showcases detailed petals and organic foliage in classic black ink on premium white cotton.</p>
+                        <li>Classic unisex cut suitable for all body types. (Sizes XS - 2XL)</li>
+                    </details>
+                </div>
+
+                 <div class="product">
+                    <img src="products/heart-magnet.png"><br>
+                <h3>Sacred Heart Magnet</h3>
+                <p>$10.00</p>
+                <button onclick="addToCart('Sacred Heart Magnet', 10)">Add to Cart</button>
+                    <details>
+                    <summary>Details</summary>
+                    <p>Add spiritual charm to your fridge or magnetic surfaces with this beautifully illustrated sacred heart magnet collection. Featuring five distinct heart designs in classic tattoo art style, each element showcases intricate line work with soft watercolor washes in pink and blue tones.</p>
+                        <li>Compact 3x4 rectangular magnet.</li>
+                    </details>
+                </div>
+
+                <div class="product">
+                    <img src="products/luckylee-tee.png"><br>
+                <h3>Classic LuckyLee Tee</h3>
+                <p>$20.00</p>
+                <button onclick="addToCart('Classic LuckyLee Tee', 20)">Add to Cart</button>
+                    <details>
+                    <summary>Details</summary>
+                    <p>Represent your favorite design studio with this clean, minimalist branded t-shirt featuring the Lucky Lee Designs logo in elegant red script lettering. Perfect for creatives, clients, or anyone who appreciates thoughtful design and quality apparel.</p>
+                        <li>Classic unisex cut suitable for all body types. (Sizes XS - 2XL)</li>
+                    </details>
+                </div>
+
+                <div class="product">
+                    <img src="products/lily-frame.png"><br>
+                <h3>Lily Stem Art Print</h3>
+                <p>$15.00</p>
+                <button onclick="addToCart('Lily Stem Art Print', 15)">Add to Cart</button>
+                    <details>
+                    <summary>Details</summary>
+                    <p>Bring elegant botanical beauty to your space with this sophisticated lily stem art print. The delicate line drawing features intricate floral details with graceful lilies, leaves, and whimsical star accents, all rendered in classic black ink on a soft cream background.</p>
+                        <li>Available in multiple sizes to fit any space</li>
+                    </details>
                 </div>
 
                 <script>
                 function addToCart(name, price) {
-                    const item = { name, price };
+                    const item = { name, price};
                     let cart = JSON.parse(localStorage.getItem('cart')) || [];
                     cart.push(item);
                     localStorage.setItem('cart', JSON.stringify(cart));
                     alert("Added to cart!");
                 }
                 </script>
+            </div>
         </main>
+        <footer>
+            <h1>LuckyLee</h1>
+                <table>
+                    <caption>CONTACT US</caption>
+                    <tr>
+                        <th>Instagram:
+                        <a href="instagram.com" target= "_blank">@username</a>
+                    </tr>
+                    <tr>
+                        <th>Email: 
+                        <a href="mailto: email.LuckyLee.com">email@LuckyLee.com</a>
+                    </tr>
+                    </table>
+        </footer>
     </div>
 </body>
 </html>

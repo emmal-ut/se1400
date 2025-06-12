@@ -27,31 +27,60 @@
                     </nav>
         <main>
             <h4>Custom Designs</h4>
-            <p>Have a special project in mind? Whether you’re dreaming up custom invitations, personalized art prints, or something totally unique, we’re here to help bring your vision to life. Use the form below to tell us a bit about your idea, and we’ll be in touch to discuss details, pricing, and next steps. We love collaborating on creative projects!</p>
-            <form action="submit.php" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" name="name" id="name" required><br><br>
+            <div id="custom-main">
+                <p style="text-indent: 2em;">Have a special project in mind? Whether you’re dreaming up custom invitations, personalized art prints, or something totally unique, we’re here to help bring your vision to life. Use the form below to tell us a bit about your idea, and we’ll be in touch to discuss details, pricing, and next steps. We love collaborating on creative projects!</p>
+                <div id="gallery">
+                    <div>
+                        <img src="gallery/colonel-canvas.png" alt="Gallery1">
+                    </div>
+                    <div>
+                        <img src="gallery/3d-type-board.png" alt="Gallery2">
+                    </div>
+                    <div>
+                        <img src="gallery/savannah-bc.png" alt="Gallery3">
+                    </div>
+                </div>
+                <p id="view">To view more of the custom projects we have done recently view <a href="gallery.html">The Gallery</a> !</p>
 
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email" required><br><br>
+                <form action="submit.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name" required><br><br>
 
-            <label for="project-type">Project Type:</label><br>
-            <select id="project-type" name="project-type" required>
-                <option value="">-- Please choose an option--</option>
-                <option value="Event Invitations">Event Inviations</option>
-                <option value="Business Cards">Business Cards</option>
-                <option value="Art Prints">Art Prints</option>
-                <option value="Specialty Art Piece">Specialty Art Piece</option>
-                <option value="Other">Other</option>
-            </select><br><br>
-            <label for="details">Tell us about your idea:</label><br>
-            <textarea id="details" name="details" rows="6" required></textarea><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" required><br><br>
 
-            <label for="deadline">Preferred Deadline:</label><br>
-            <input type="date" id="deadline" name="deadline"><br><br>
-            <input type="submit" value="Send">
-            </form>
+                <label for="project-type">Project Type:</label><br>
+                <select id="project-type" name="project-type" required>
+                    <option value="">-- Please choose an option--</option>
+                    <option value="Event Invitations">Event Inviations</option>
+                    <option value="Business Cards">Business Cards</option>
+                    <option value="Art Prints">Art Prints</option>
+                    <option value="Specialty Art Piece">Specialty Art Piece</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+                <label for="details">Tell us about your idea:</label><br>
+                <textarea id="details" name="details" rows="6" required></textarea><br><br>
+
+                <label for="deadline">Preferred Deadline:</label><br>
+                <input type="date" id="deadline" name="deadline"><br><br>
+                <input type="submit" value="Send" id="send">
+                </form>
+            </div>
         </main>
+        <footer>
+            <h1>LuckyLee</h1>
+                <table>
+                    <caption>CONTACT US</caption>
+                    <tr>
+                        <th>Instagram:
+                        <a href="instagram.com" target= "_blank">@username</a>
+                    </tr>
+                    <tr>
+                        <th>Email: 
+                        <a href="mailto: email.LuckyLee.com">email@LuckyLee.com</a>
+                    </tr>
+                    </table>
+        </footer>
     </div>
 </body>
 </html>
