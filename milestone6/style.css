@@ -484,7 +484,7 @@ button:hover {
     text-align: center;
     color:#122f3c;
     padding: 20px;
-    border-bottom: #AEA922 15px dotted;
+    border-bottom: #AEA922 12px dotted;
     margin-bottom: 25px;
     text-shadow: 2px 2px 4px #e3e3e3;
 }
@@ -498,6 +498,11 @@ button:hover {
     padding-top: 40px;
     text-shadow: .5px .5px 4px #e3e3e3;
 }
+#about-main #gallery div img {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    }
 
 #about-main img {
     width: 300px;
@@ -715,6 +720,9 @@ label {
     border-bottom: none;
     margin-bottom: 0;
 }
+#about-main #gallery div img {
+    border-bottom: none;
+    }
 #section1 img {
     float: none;
     max-width: 400px;
